@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Train+One&family=Oswald:wght@200;300;500;700&family=Montserrat+Alternates:wght@200;300;500;700&display=swap");
+:root {
+  --color_logoecho: #f2dea2;
+  --color_course_black: black;
+  --color_course_orange: #802201;
+  --color_course_purple: #2d0e25;
+
+  /* Logotype */
+  --color-logotype-bg: ;
+  --color-text-logotype: ;
+  --font-logotype-size: 1rem;
+
+  /* Links */
+  --color-link: #f2dea2;
+  --color-link-hover: white;
+  --color-link-active: white;
+  --border-radius-links: 1px;
+
+  /* Headlines (size)*/
+  --font-h1-size: 3rem;
+  --font-h2-size: 2rem;
+  --font-h3-size: 1rem;
+
+  --headline2-size: 1rem;
+  --headline3-size: 1rem;
+  --font-sub1-size: 1rem;
+
+  /* Tekst */
+  --color-text: #f2dea2;
+  --text-size: 1rem;
+
+  /* Andet tekst */
+  --followup-text-size: 1rem;
+
+  /*  Margins */
+  --margin-head-bottom: 5px;
+
+  /* Borders */
+  --border-radius: 5px;
+
+  /* Fonts */
+  --font-family-h1: "Train One";
+  --font-family-h2-h3: "Oswald", sans-serif;
+  --font-family-p: "Montserrat Alternates", sans-serif;
+
+  /* Font weights */
+  --font-weight-bold: 700;
+  --font-weight-medium: 500;
+  --font-weight-regular: 300;
+  --font-weight-light: 200;
+
+  /* Forms background colors */
+  --form-background-color: #354036;
+  --form-ligther-color: #3f4b3e;
+  --form-shadow-color: #354036;
+  /* --color-field-bg: ; */
+
+  /* Footer background color*/
+  --footer-background-color: black;
+}
+
+h1 {
+  font-size: var(--font-h1-size);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-h1);
+
+  color: var(--color-text);
+  margin: 5px 0;
+  line-height: 1.3rem;
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: var(--headline2-size);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--font-family-h2-h3);
+
+  color: var(--color-text);
+
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: var(--headline3-size);
+  font-family: var(--font-family-h2-h3);
+
+  color: var(--color-text);
+
+  text-transform: uppercase;
+}
+p {
+  font-family: var(--font-family-p);
+  font-size: var(--text-size);
+  color: var(--color-text);
+}

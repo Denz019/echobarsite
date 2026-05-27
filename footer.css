@@ -1,0 +1,63 @@
+/* =========================
+/* FOOTER GRID */
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 900px) {
+  .footer-grid {
+    gap: 50px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 600px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  padding-top: 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer h4 {
+  font-family: "Oswald", sans-serif;
+  color: #f4e1b6;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.footer p {
+  color: #aaa;
+  line-height: 1.8;
+  font-size: 0.9rem;
+}
+
+.footer-bottom {
+  margin-top: 80px;
+  padding: 25px 40px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+}

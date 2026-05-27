@@ -1,0 +1,54 @@
+<svg width="1200" height="1000" viewBox="0 0 1200 1000" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .axis { stroke:#F6A23A; stroke-width:4; stroke-linecap:square; }
+    .dot { fill:#1f1f1f; }
+    .label { fill:#1f1f1f; font-family: Georgia, 'Times New Roman', serif; font-size:32px; }
+    .axis-label { fill:#1f1f1f; font-family: Georgia, 'Times New Roman', serif; font-weight:700; font-size:48px; }
+  </style>
+
+  <line class="axis" x1="205" y1="520" x2="1040" y2="520"/>
+  <line class="axis" x1="620" y1="90" x2="620" y2="930"/>
+
+  <line class="axis" x1="205" y1="480" x2="205" y2="560"/>
+  <line class="axis" x1="345" y1="480" x2="345" y2="560"/>
+  <line class="axis" x1="485" y1="480" x2="485" y2="560"/>
+  <line class="axis" x1="760" y1="480" x2="760" y2="560"/>
+  <line class="axis" x1="900" y1="480" x2="900" y2="560"/>
+  <line class="axis" x1="1040" y1="480" x2="1040" y2="560"/>
+
+  <line class="axis" x1="582" y1="90" x2="658" y2="90"/>
+  <line class="axis" x1="582" y1="230" x2="658" y2="230"/>
+  <line class="axis" x1="582" y1="370" x2="658" y2="370"/>
+  <line class="axis" x1="582" y1="645" x2="658" y2="645"/>
+  <line class="axis" x1="582" y1="785" x2="658" y2="785"/>
+  <line class="axis" x1="582" y1="930" x2="658" y2="930"/>
+
+  <text class="axis-label" x="620" y="62" text-anchor="middle">Sweet</text>
+  <text class="axis-label" x="620" y="990" text-anchor="middle">Sour</text>
+  <text class="axis-label" x="115" y="580" text-anchor="middle" transform="rotate(-90 115 580)">Bitter</text>
+  <text class="axis-label" x="1085" y="580" text-anchor="middle" transform="rotate(90 1085 580)">Fresh</text>
+
+  <circle class="dot" data-id="A1" cx="930" cy="250" r="7"/><text class="label" x="913" y="230">A1</text>
+  <circle class="dot" data-id="A2" cx="960" cy="650" r="7"/><text class="label" x="945" y="625">A2</text>
+  <circle class="dot" data-id="A3" cx="885" cy="585" r="7"/><text class="label" x="868" y="567">A3</text>
+  <circle class="dot" data-id="A4" cx="680" cy="575" r="7"/><text class="label" x="665" y="557">A4</text>
+  <circle class="dot" data-id="A5" cx="690" cy="215" r="7"/><text class="label" x="672" y="195">A5</text>
+  <circle class="dot" data-id="A6" cx="735" cy="375" r="7"/><text class="label" x="718" y="355">A6</text>
+  <circle class="dot" data-id="A7" cx="760" cy="663" r="7"/><text class="label" x="741" y="645">A7</text>
+  <circle class="dot" data-id="A8" cx="925" cy="318" r="7"/><text class="label" x="907" y="298">A8</text>
+  <circle class="dot" data-id="A9" cx="655" cy="455" r="7"/><text class="label" x="638" y="435">A9</text>
+
+  <circle class="dot" data-id="B1" cx="663" cy="332" r="7"/><text class="label" x="645" y="312">B1</text>
+  <circle class="dot" data-id="B2" cx="580" cy="438" r="7"/><text class="label" x="562" y="418">B2</text>
+  <circle class="dot" data-id="B3" cx="920" cy="650" r="7"/><text class="label" x="902" y="632">B3</text>
+  <circle class="dot" data-id="B4" cx="515" cy="240" r="7"/><text class="label" x="498" y="220">B4</text>
+  <circle class="dot" data-id="B5" cx="755" cy="610" r="7"/><text class="label" x="737" y="592">B5</text>
+  <circle class="dot" data-id="B6" cx="465" cy="272" r="7"/><text class="label" x="448" y="252">B6</text>
+  <circle class="dot" data-id="B7" cx="290" cy="425" r="7"/><text class="label" x="273" y="405">B7</text>
+  <circle class="dot" data-id="B8" cx="405" cy="605" r="7"/><text class="label" x="388" y="585">B8</text>
+  <circle class="dot" data-id="B9" cx="955" cy="480" r="7"/><text class="label" x="938" y="460">B9</text>
+
+  <circle class="dot" data-id="C1" cx="700" cy="642" r="7"/><text class="label" x="683" y="622">C1</text>
+  <circle class="dot" data-id="C2" cx="695" cy="500" r="7"/><text class="label" x="678" y="480">C3</text>
+  <circle class="dot" data-id="C3" cx="840" cy="445" r="7"/><text class="label" x="823" y="425">C4</text>
+</svg>

@@ -1,0 +1,518 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  color: #f4e1b6;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* html {
+  interpolate-size: allow-keywords;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+} */
+
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  line-height: 1.25;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+label {
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: max(1em, 16px);
+}
+
+textarea {
+  resize: none;
+  min-height: 4lh;
+}
+
+legend {
+  padding: 0;
+}
+
+select,
+::picker(select) {
+  appearance: base-select;
+}
+/* ---------------------------------------------------------------------*/
+.hero {
+  position: relative;
+  height: 100vh;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.65)), url(imgs-echo/reservation.webp);
+
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: calc(100vh - 100px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content h1 {
+  font-family: "TRAIN ONE", sans-serif;
+
+  font-size: 8rem;
+  font-weight: normal;
+
+  color: #f4e1b6;
+
+  text-transform: uppercase;
+
+  letter-spacing: 8px;
+  line-height: 1;
+
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------------ */
+
+.resi_site {
+  background-color: var(--footer-background-color);
+}
+
+.text_map {
+  text-align: center;
+  font-family: var(--font-family-h1);
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+/* ------------------ form--------------------------------------- */
+
+.input-info {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  /* padding: 20px 20px 3px 20px; */
+}
+
+#webform:has(:required) {
+  label::after {
+    content: " *";
+    color: red;
+  }
+}
+
+label {
+  color: var(--rt--color-text);
+}
+
+button {
+  color: var(--rt--color-text);
+  margin: auto;
+}
+
+.open_bnt {
+  border: 1.5px solid var(--color-text);
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--form-ligther-color);
+  box-shadow: 5px 5px 10px #0f0f0d;
+  padding: 6px;
+  padding-inline: 9px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.close_bnt {
+  border: 1.5px solid var(--color-text);
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--form-ligther-color);
+  box-shadow: 5px 5px 10px #0f0f0d;
+  padding: 6px;
+  padding-inline: 30px;
+  width: auto;
+}
+
+input {
+  margin-bottom: 20px;
+  background-color: var(--form-ligther-color);
+}
+
+legend {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fullName,
+.PhoneN,
+.eMail {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.fullName label,
+.PhoneN label,
+.eMail label {
+  width: 180px; /* adjust as needed */
+}
+
+input {
+  width: 350px;
+  padding: 4px;
+  box-shadow: 5px 5px 10px #0f0f0d;
+}
+
+/* -----------------------------calender and guest----------------------------------- */
+.calender_guest {
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.guests {
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 6px -4px #171d18;
+  color: var(--rt--color-text);
+}
+
+.Time {
+  box-shadow: 0 4px 6px -4px #171d18;
+}
+
+.calender_1,
+.number {
+  padding: 6px;
+}
+
+.calender_guest input {
+  width: 220px;
+  color: var(--rt--color-text);
+  border: 1px solid var(--color-text);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #0f0f0d;
+}
+
+.number {
+  width: fit-content;
+  border: 1px solid var(--color-text);
+  margin: 0 !important;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #0f0f0d;
+}
+
+.guests p {
+  margin-top: 2px;
+  font-size: x-small;
+}
+.guest_label {
+  margin-bottom: 7px;
+  margin-top: -7px;
+}
+
+/* --------------------------------------------------------------------- */
+.Time label {
+  margin: auto;
+  margin-top: 20px;
+
+  text-align: center;
+}
+
+.time_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: fit-content;
+  height: auto;
+
+  margin: auto;
+  margin-top: 8px;
+
+  column-gap: 10px;
+}
+.time-btn {
+  width: auto;
+  padding: 5px;
+  padding-inline: 20px;
+  box-shadow: 5px 5px 10px #0f0f0d;
+  color: var(--color-text);
+  border: 1px solid var(--color-text);
+  border-radius: 5px;
+  color: var(--rt--color-text);
+}
+
+/* ---------------------------------------------------------------------------------- */
+.Summary {
+  background-color: var(--form-background-color);
+  width: 250px;
+  margin: auto;
+  height: auto;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.Summary div {
+  margin-bottom: 9px;
+  color: var(--rt--color-text);
+}
+
+.Summary h2 {
+  margin-bottom: 17px;
+}
+
+/* ------------------------------popover----------------------------------- */
+
+:popover-open {
+  width: 500px;
+  height: fit-content;
+  padding: 25px;
+  display: block;
+  margin: auto;
+  opacity: 1;
+  rotate: none;
+  border: 1px solid var(--color-text);
+  border-radius: 5px;
+}
+
+.Summary span {
+  font-weight: bolder;
+}
+
+.summary-row {
+  display: flex;
+}
+
+.label {
+  width: 200px;
+  font-weight: 600;
+}
+
+:popover-open div {
+  margin-bottom: 25px;
+}
+
+::backdrop {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+}
+
+When open :popover-open {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.time-btn {
+  transition: transform 0.3s ease;
+}
+.time-btn:hover {
+  transform: scale(1.2);
+}
+
+/* --------------------------------------------------------------------- */
+#webform {
+  background-color: var(--form-background-color);
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  border: 1px solid var(--color-text);
+  padding-top: 20px;
+}
+
+.calender_guest div {
+  margin-top: 8px;
+}
+.MAP_map {
+  height: 22%;
+}
+
+input {
+  border: 1px solid var(--color-text);
+  border-radius: 5px;
+  /* width: 350px; */
+}
+
+input::placeholder {
+  color: #0f0f0d;
+  opacity: 0.55;
+}
+
+@media (max-width: 800px) {
+  .calender_guest {
+    margin-bottom: 20px;
+  }
+
+  .guests p {
+    margin-bottom: 20px;
+  }
+  .Time {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+
+  :popover-open {
+    width: 90%;
+    height: fit-content;
+    padding: 25px;
+    display: block;
+    margin: auto;
+    opacity: 1;
+    rotate: none;
+    border: 1px solid var(--color-text);
+    border-radius: 5px;
+  }
+}
+/* --------------------------------------------------------------------- */
+@media (min-width: 800px) {
+  .input-info {
+    /* width: 550px; */
+    margin: 0;
+    padding: 20px 20px 3px 20px;
+  }
+  input {
+    width: 500px;
+    padding: 5px;
+  }
+  .h3 {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    font-size: large;
+  }
+
+  .MAP_map {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+  }
+
+  button {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  button:hover {
+    transform: scale(1.1);
+  }
+
+  .time-btn {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  .time-btn:hover {
+    transform: scale(1.2);
+  }
+
+  #webform {
+    background-color: var(--form-background-color);
+    width: min-content;
+    padding-inline: 50px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid var(--color-text);
+  }
+
+  .grid_time_cal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+
+    box-shadow: 0 4px 2px -2px var(--color-text);
+  }
+
+  .calender_guest {
+    box-shadow: none;
+    margin-bottom: 90px;
+  }
+
+  .guests {
+    box-shadow: none;
+    margin-bottom: 99px;
+  }
+
+  .open_bnt {
+    margin-left: 210px;
+    padding: 10px;
+    padding-inline: 50px;
+  }
+}
+@media (max-width: 600px) {
+  .hero-content h1 {
+    font-size: 10vw;
+    letter-spacing: 4px;
+  }
+
+  .feature-image img,
+  .about-img img {
+    height: 240px;
+  }
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reservationstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Document</title>
+</head>
+
+<body class="resi_site">
+    <header class="header">
+        <nav class="navbar">
+
+            <ul class="nav-left">
+                <li><a href="#" class="active_res">RESERVATION</a></li>
+                <li><a href="disco.html">SILENT DISCO</a></li>
+            </ul>
+
+            <div class="logo">
+                <a href="index.html">ECHO</a>
+            </div>
+
+            <ul class="nav-right">
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="course.html">COCKTAIL COURSE</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section class="reservation">
+
+            <!-- <div>
+                    <img src="imgs-echo/reservation.webp" alt="resivation">
+                </div> -->
+            <header class="hero">
+                <div class="overlay"></div>
+
+                <div class="hero-content">
+                    <h1>RESERVATION</h1>
+                </div>
+            </header>
+        </section>
+        <form id="webform" class="webform">
+            <div class="grid_time_cal">
+
+                <div class="calender_guest">
+
+                    <label for="selcDayCalender">Select a day</label>
+                    <div>
+                        <input class="calender_1" required type="date" id="selcDayCalender" name="selc_Day_Calender">
+                    </div>
+
+                </div>
+
+                <div class="guests">
+
+                    <div class="input_container">
+                        <label class="guest_label" for="Guest">Guest</label>
+                        <div>
+                            <input size="2" value="4" min="4" class="number" required type="number" id="Guest"
+                                name=" Guest">
+                        </div>
+                    </div>
+                    <p>Minimum 4 guests per reservation</p>
+
+                </div>
+
+
+                <div class="Time">
+                    <div>
+                        <label for="AvailableTimes">Available Times</label>
+                    </div>
+                    <div class="time_grid">
+                        <div>
+                            <input required type="button" value="16:00" class="time-btn" name="Available_Times">
+                        </div>
+                        <div>
+                            <input required type="button" value="17:00" class="time-btn" name="Available_Times">
+                        </div>
+                        <div>
+                            <input required type="button" value="17:30" class="time-btn" name="Available_Times">
+                        </div>
+                        <div>
+                            <input required type="button" value="18:00" class="time-btn" name="Available_Times">
+                        </div>
+                        <div>
+                            <input required type="button" value="18:30" class="time-btn" name="Available_Times">
+                        </div>
+                        <div>
+                            <input required type="button" value="19:00" class="time-btn" name="Available_Times">
+                        </div>
+                        <div>
+                            <input required type="button" value="19:30" class="time-btn" name="Available_Times">
+                        </div>
+                        <div>
+                            <input required type="button" value="20:00" class="time-btn" name="Available_Times">
+                        </div>
+                        <div>
+                            <input required type="button" value="20:30" class="time-btn" name="Available_Times">
+                        </div>
+                        <div>
+                            <input required type="button" value="21:00" class="time-btn" name="Available_Times">
+                        </div>
+                        <div>
+                            <input required type="button" value="21:30" class="time-btn" name="Available_Times">
+                        </div>
+                        <div>
+                            <input required type="button" value="22:00" class="time-btn" name="Available_Times">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="input-info">
+                <legend>
+                    <h3 class="h3">YOUR DETAILS</h3>
+                </legend>
+
+                <div class="input_2">
+                    <div class="fullName">
+                        <label for="Fullname">Name and Lastname</label>
+                        <input placeholder="Enter your full name" class="input" required type="text" id="Fullname"
+                            name="Full_name">
+                    </div>
+
+
+                    <div class="PhoneN">
+                        <label for="phoneN">Phone number</label>
+                        <input placeholder="Enter your Phone number" class="input" required type="tel" id="phoneN"
+                            name="phone_number">
+                    </div>
+
+                    <div class="eMail">
+                        <label for="email">E-mail</label>
+                        <input placeholder="Enter your e-mail address" class="input" required type="email" id="email"
+                            name="e_mail">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <button type="button" class="open_bnt" popovertarget="Confirm_reservation">
+                Confirm reservation
+            </button>
+            <article id="Confirm_reservation" class="Summary" popover>
+                <h2>Booking summary</h2>
+
+                <div class="summary-row">
+                    <span class="label">Name and Lastname:</span>
+                    <span class="Full_name"></span>
+                </div>
+
+                <div class="summary-row">
+                    <span class="label">Phone number:</span>
+                    <span class="phone_number"></span>
+                </div>
+
+                <div class="summary-row">
+                    <span class="label">Email:</span>
+                    <span class="e_mail"></span>
+                </div>
+
+                <div class="summary-row">
+                    <span class="label">Select a day:</span>
+                    <span class="selc_Day_Calender"></span>
+                </div>
+
+                <div class="summary-row">
+                    <span class="label">Guest:</span>
+                    <span class="Guest"></span>
+                </div>
+
+                <div class="summary-row">
+                    <span class="label">Available Times:</span>
+                    <span class="Available_Times"></span>
+                </div>
+
+                <button type="submit" class="close_bnt" popovertarget="Confirm_reservation" popovertargetaction="hide">
+                    OK
+                </button>
+            </article>
+
+            <!-- 
+                <button type="button" class="open_bnt" popovertarget="Confirm_reservation">
+                    Confirm reservation
+                </button>
+    
+                <article id="Confirm_reservation" class="Summary" popover>
+                    <h2>Booking summary</h2>
+    
+                    <div>Name and Lastname: <span class="Full_name"></span></div>
+                    <div>Phone number: <span class="phone_number"></span></div>
+                    <div>Email: <span class="e_mail"></span></div>
+                    <div>Select a day: <span class="selc_Day_Calender"></span></div>
+                    <div>Guest: <span class="Guest"></span></div>
+                    <div>Available Times: <span class="Available_Times"></span></div>
+    
+                    <button type="submit" class="close_bnt" popovertarget="Confirm_reservation" popovertargetaction="hide">
+                        OK
+                    </button>
+                </article> -->
+
+        </form>
+
+
+
+        <div class="map">
+            <h3 class="text_map">Visit ECHO</h3>
+            <div class="MAP_map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17994.910474864228!2d12.550144!3d55.6826624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525375cafd3fad%3A0x9d0a5782c1303810!2sEcho%20Bar!5e0!3m2!1sen!2sdk!4v1779228683910!5m2!1sen!2sdk"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+                <h4>VISIT US</h4>
+
+                <p>
+                    Østerbrogade 1 <br>
+                    København Ø <br>
+                    København
+                </p>
+            </div>
+
+            <div>
+                <h4>OPENING HOURS</h4>
+
+                <p>
+                    Monday - Wed: 16:00 <br>
+                    Thursday: 16:00 - 02:00 <br>
+                    Friday: 16:00 - 04:00 <br>
+                    Saturday: 18:00 - 04:00
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="logo">ECHO</div>
+
+            <p>© ECHO 2025. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+    <script src="reservation.js"></script>
+</body>
+
+</html>

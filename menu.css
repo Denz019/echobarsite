@@ -1,0 +1,294 @@
+/* HOUSE COCKTAILS */
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+:root {
+  --orange: #f6a23a;
+  --text: #1f1f1f;
+  background-color: #f8f4ea;
+}
+body {
+  padding-top: 6rem;
+}
+.page {
+  width: 1200px;
+  min-height: 1000px;
+  margin: 0 auto;
+  background: var(--bg);
+  padding: 48px 54px 60px;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: var(--font-family-h1);
+  font-weight: var(--font-weight-bold);
+  color: var(--orange);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.divider {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.divider-svg {
+  width: 100%;
+  display: block;
+  filter: brightness(0) saturate(100%) invert(72%) sepia(67%) saturate(1172%) hue-rotate(338deg) brightness(101%) contrast(93%);
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 86px;
+  row-gap: 54px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 18px;
+  align-items: start;
+  min-height: 102px;
+}
+
+.item h2 {
+  margin-bottom: 6px;
+  line-height: 1;
+  color: var(--text);
+}
+
+.item p {
+  line-height: 1.5;
+  color: var(--text);
+}
+
+.allergen {
+  display: block;
+  font-family: var(--font-family-p);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--text);
+  margin-top: 6px;
+}
+
+.price {
+  font-family: var(--font-family-h2-h3);
+  font-size: 1.5rem;
+  color: var(--text);
+  line-height: 1;
+  padding-top: 10px;
+  white-space: nowrap;
+}
+
+.house-cocktails,
+.classic-cocktails,
+.gin-tonics,
+.beer-selection,
+.wine-section {
+  padding-bottom: 120px;
+}
+
+/* WINE */
+.wine-prices {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.wine-size,
+.wine-price {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  font-family: var(--font-family-h2-h3);
+  color: var(--text);
+}
+.taste-map-section {
+  padding: 60px 0;
+}
+
+.taste-map-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 40px;
+  align-items: start;
+}
+
+#tasteMap {
+  width: 100%;
+  max-width: 900px;
+}
+
+.cocktail-info {
+  position: sticky;
+  top: 40px;
+  border: 2px solid #f6a23a;
+  padding: 24px;
+  min-height: 360px;
+  background: #fff;
+}
+
+.cocktail-image {
+  width: 100%;
+  height: 180px;
+  background: #f4f4f4;
+  margin-bottom: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.cocktail-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.cocktail-info h2 {
+  margin-bottom: 12px;
+  color: #1f1f1f;
+}
+
+.cocktail-info p {
+  color: #1f1f1f;
+  line-height: 1.5;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 100vw;
+    padding: 24px 16px;
+    overflow-x: hidden;
+  }
+
+  .title {
+    font-size: clamp(2rem, 9vw, 3rem);
+    line-height: 0.95;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .divider {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 56px;
+  }
+
+  .divider-svg {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 56px;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) fit-content(80px);
+    column-gap: 12px;
+    align-items: start;
+    width: 100%;
+    min-height: auto;
+  }
+
+  .item > div:first-child {
+    min-width: 0;
+    width: 100%;
+  }
+
+  .item h2 {
+    font-size: 1rem;
+    line-height: 1.1;
+    margin-bottom: 18px;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .item p {
+    font-size: 1rem;
+    line-height: 1.45;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .allergen {
+    font-size: 0.8rem;
+    margin-top: 18px;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  .price {
+    font-size: 0.9rem;
+    font-weight: var(--font-weight-bold);
+    white-space: nowrap;
+    justify-self: end;
+    align-self: start;
+    padding-top: 0;
+  }
+
+  .wine-prices {
+    font-size: 0.9rem;
+    justify-self: end;
+  }
+
+  .wine-size,
+  .wine-price {
+    gap: 10px;
+  }
+
+  .house-cocktails,
+  .classic-cocktails,
+  .gin-tonics,
+  .beer-selection,
+  .wine-section {
+    padding-bottom: 72px;
+  }
+
+  .taste-map-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .cocktail-info {
+    position: static;
+  }
+}

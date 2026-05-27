@@ -1,0 +1,161 @@
+/* =========================
+LAYOUT INDEX + header + footer
+========================= */
+/* =========================
+   CONTAINER
+========================= */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* =========================
+   GRID LAYOUTS
+========================= */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* ABOUT GRID */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* =========================
+   HERO LAYOUT
+========================= */
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================
+   FEATURE LAYOUT
+========================= */
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* =========================
+   NAVBAR LAYOUT
+========================= */
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 900px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content h1 {
+    font-size: 14vw;
+  }
+
+  .section-title h2 {
+    font-size: 2.2rem;
+  }
+
+  .feature-text {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 600px) {
+  .section {
+    padding: 70px 0;
+  }
+
+  .hero-content h1 {
+    letter-spacing: 4px;
+  }
+
+  .feature-image img,
+  .about-img img {
+    height: 240px;
+  }
+}
+
+/* =========================
+   GALLERY GRID
+========================= */
+
+.gallery-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-auto-rows: 180px;
+
+  gap: 12px;
+
+  width: 95%;
+  margin: auto;
+}
+
+/* LARGE IMAGE */
+.gallery-item.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* WIDE IMAGE */
+.gallery-item.wide {
+  grid-column: span 2;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-item.large,
+  .gallery-item.wide {
+    grid-column: span 2;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 250px;
+  }
+
+  .gallery-item.large,
+  .gallery-item.wide {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
